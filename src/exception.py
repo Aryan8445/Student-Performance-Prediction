@@ -14,10 +14,3 @@ class CustomException(Exception):
     def __str__(self):
         return self.error_message
     
-
-if __name__ == "__main__":
-    try:
-        raise CustomException("This is a test error message", sys)
-    except CustomException as e:
-        print(e)
-        print(error_message_details(e, sys))
